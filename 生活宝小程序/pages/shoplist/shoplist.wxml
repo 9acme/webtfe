@@ -1,0 +1,28 @@
+<view class='shop'>
+    <image src='https://imgcps.jd.com/ling4/46858719863/56ul6KOF5oqi5YWI6LSt/5aSp5aSp5pyJ54m55Lu3/p-5c1361ed82acdd181dd72188/3ae8877c/cr_1125x549_0_72/s1125x690/q70.jpg' mode='aspectFill'></image>
+    <view class='shop-info'>
+        <text class='shop-title ell'>模板：店铺名称很长很长很长很长很长</text>
+        <text>电话：</text>
+        <text>地址：</text>
+        <text>营业时间：</text>
+    </view>
+    <view class='shop-star'>
+        <view class='star-after'>★★★★★</view>
+        <view class='star-before'>★★★★★</view>
+    </view>
+</view>
+<view class='shop' wx:for="{{ shops }}" wx:key="id">
+    <image src='{{ item.images[0] }}' mode='aspectFill'></image>
+    <view class='shop-info'>
+        <text class='shop-title ell'>{{ item.name }}</text>
+        <text>电话：{{ item.phone }}</text>
+        <text>地址：{{ item.address }}</text>
+        <text>营业时间：{{ item.businessHours }}</text>
+    </view>
+    <view class='shop-star'>
+        <view class='star-after'>★★★★★</view>
+        <view class='star-before'>★★★★★</view>
+    </view>
+</view>
+<view class="loadmore loading" wx:if="{{ hasMore }}">正在加载...</view>
+<view class="loadmore" wx:else>~~~~我是有底线的~~~~</view>

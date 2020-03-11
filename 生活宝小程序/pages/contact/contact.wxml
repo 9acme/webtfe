@@ -1,0 +1,10 @@
+<view class='cell'>
+    <view class='cell-item'>手机号: 17775804813</view>
+    <view class='cell-item'>邮　箱: 1282745760@qq.com</view>
+    <view class='cell-item'>GitHub: https://github.com/Annarheimur/hcj</view>  
+</view>
+<view class='stripes'></view>
+<view class='cell'>
+    <view class='cell-item'>版本号：1.0.0</view>
+    <view class='cell-item arrow'>免责声明</view>
+</view>

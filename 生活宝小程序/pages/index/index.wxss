@@ -1,0 +1,41 @@
+/* 首页轮播图 */
+.shuffling image {
+  width:750rpx;
+  height: 365rpx;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav navigator {
+    width: 33.33%;
+    height: 200rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    font-size: 14px;
+    border-bottom: 1rpx solid rgba(66, 66, 66, 0.1);
+}
+
+.nav image {
+    width: 102rpx;
+    height: 102rpx;
+}
+
+/* 首页入口分区 */
+.enter {
+    display: flex;
+    padding: 20rpx 25rpx;
+}
+
+.enter navigator {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.enter image {
+    width: 320rpx;
+    height: 178rpx;
+}

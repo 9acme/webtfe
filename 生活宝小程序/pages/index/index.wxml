@@ -1,0 +1,27 @@
+<!-- 首页轮播图模块 -->
+<view class='shuffling'>
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{ 2500 }}" duration="{{ 400 }}" circular="{{ true }}">
+        <swiper-item wx:for="{{ sliders }}" wx:key="id">
+            <image src="{{ item.image }}" mode='aspectFill' width="375" height="150" lazy-load/>
+        </swiper-item>
+    </swiper>
+</view>
+
+<!-- 首页导航模块 -->
+<view class='nav'>
+    <navigator class='bdr' wx:for="{{ navs }}" wx:key="id" url='/pages/shoplist/shoplist?cat={{ item.id }}&title={{ item.name }}'>
+        <image src='{{ item.icon }}' mode="aspectFill" lazy-load/> 
+        <text>{{ item.name }}</text>
+    </navigator>
+</view>
+<view class='stripes'></view>
+
+<!-- 首页入口分区 -->
+<view class='enter'>
+    <navigator>
+        <image src='/assets/images/link-01.png'></image>
+    </navigator>
+    <navigator>
+        <image src='/assets/images/link-02.png'></image>
+    </navigator>
+</view>

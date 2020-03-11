@@ -1,0 +1,9 @@
+<navigator wx:for="{{messages}}" wx:key="id">
+    <view class='card'>
+        <text class='card-title'>{{ item.title }}</text>
+        <text class='card-data'>{{ item.date }}</text>
+        <image src='{{ item.image }}' mode='aspectFill'></image>
+        <text class='card-desc'>{{ item.desc }}</text>
+        <text class='card-read .arrow'>查看详情</text>
+    </view>
+</navigator>
